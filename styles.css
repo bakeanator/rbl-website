@@ -259,6 +259,11 @@ button { font-family: var(--f); }
 .val-num { font-family: var(--mono); font-size: 11px; color: var(--red); letter-spacing: .22em; flex-shrink: 0; width: 22px; }
 .val-name { font-size: 17px; font-weight: 700; text-transform: uppercase; letter-spacing: -.005em; }
 
+/* ---- ABOUT: INTRO COLS ---- */
+.about-intro-cols { display: grid; grid-template-columns: 1fr 1fr; gap: 60px; margin-bottom: 80px; }
+.about-intro-cols p { font-size: clamp(15px, 1.5vw, 18px); line-height: 1.7; color: var(--silver); font-weight: 400; }
+@media (max-width: 700px) { .about-intro-cols { grid-template-columns: 1fr; } }
+
 /* ---- ABOUT: MISSION / VISION ---- */
 .mv-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 60px; margin-top: 56px; }
 .mv-item .mv-label { font-family: var(--mono); font-size: 11px; font-weight: 700; letter-spacing: .22em; color: var(--red); text-transform: uppercase; display: block; margin-bottom: 16px; }
@@ -275,13 +280,13 @@ button { font-family: var(--f); }
 
 /* ---- FOUNDERS ---- */
 .founders-grid { display: grid; grid-template-columns: repeat(3,1fr); gap: 24px; margin-top: 52px; }
-.founder-card { background: var(--white); border-radius: 4px; overflow: hidden; border: 1px solid var(--stroke-p); transition: transform .2s; }
+.founder-card { background: var(--white); border-radius: 4px; overflow: hidden; border: 1px solid var(--stroke-p); border-top: 3px solid var(--red); transition: transform .2s; }
 .founder-card:hover { transform: translateY(-5px); }
-.founder-portrait { aspect-ratio: 4/3; position: relative; overflow: hidden; }
-.founder-initials { position: absolute; inset: 0; display: flex; align-items: flex-end; padding: 20px; font-size: 56px; font-weight: 900; color: var(--white); line-height: 1; letter-spacing: -.03em; }
-.fp-bw { background: linear-gradient(135deg,#1a1a1a 0%,#8A0000 100%); }
-.fp-ls { background: linear-gradient(135deg,#1a0000 0%,#BD0000 100%); }
-.fp-rw { background: linear-gradient(135deg,#1a1230 0%,#8A0020 100%); }
+.founder-portrait { aspect-ratio: 1/1; position: relative; overflow: hidden; }
+.founder-initials { position: absolute; inset: 0; display: flex; align-items: flex-end; padding: 24px; font-size: 72px; font-weight: 900; color: var(--white); line-height: 1; letter-spacing: -.03em; }
+.fp-bw { background: linear-gradient(180deg,#1a1a1a 0%,#8A0000 100%); }
+.fp-ls { background: linear-gradient(180deg,#1a0000 0%,#BD0000 100%); }
+.fp-rw { background: linear-gradient(180deg,#1a1230 0%,#8A0020 100%); }
 .founder-body { padding: 20px 24px 26px; }
 .founder-role { font-size: 10px; font-weight: 700; letter-spacing: .22em; text-transform: uppercase; color: var(--red); display: block; margin-bottom: 6px; }
 .founder-name { font-size: 22px; font-weight: 800; color: var(--black); text-transform: uppercase; letter-spacing: -.01em; margin-bottom: 18px; }
