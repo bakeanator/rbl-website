@@ -50,64 +50,16 @@
   </div>
 </section>
 
-<!-- FORM -->
+<!-- CONTACT INFO -->
 <section class="section">
   <div class="wrap">
-    <div class="contact-grid">
-      <div>
-        <form id="contact-form" onsubmit="handleSubmit(event)">
-          <div class="form-field">
-            <label class="form-label" for="name">Your name</label>
-            <input class="form-input" type="text" id="name" name="name" placeholder="First Last" required/>
-          </div>
-          <div class="form-field">
-            <label class="form-label" for="email">Email address</label>
-            <input class="form-input" type="email" id="email" name="email" placeholder="you@email.com" required/>
-          </div>
-          <div class="form-field">
-            <label class="form-label">Project stage</label>
-            <div class="check-group">
-              <label class="check-pill"><input type="checkbox" name="stage" value="development"/><span>Development</span></label>
-              <label class="check-pill"><input type="checkbox" name="stage" value="packaging"/><span>Packaging</span></label>
-              <label class="check-pill"><input type="checkbox" name="stage" value="financing"/><span>Financing</span></label>
-              <label class="check-pill"><input type="checkbox" name="stage" value="production"/><span>Production</span></label>
-            </div>
-          </div>
-          <div class="form-field">
-            <label class="form-label">What do you need?</label>
-            <div class="check-group">
-              <label class="check-pill"><input type="checkbox" name="need" value="script"/><span>Script</span></label>
-              <label class="check-pill"><input type="checkbox" name="need" value="financial"/><span>Financial</span></label>
-              <label class="check-pill"><input type="checkbox" name="need" value="pitch-deck"/><span>Pitch deck</span></label>
-              <label class="check-pill"><input type="checkbox" name="need" value="strategy"/><span>Strategy</span></label>
-            </div>
-          </div>
-          <div class="form-field">
-            <label class="form-label" for="message">Tell us about the project</label>
-            <textarea class="form-textarea" id="message" name="message" placeholder="A few sentences is plenty — what are you working on, and what do you need?"></textarea>
-          </div>
-          <button class="btn-submit" type="submit">Send →</button>
-        </form>
-        <div id="form-success" style="display:none;padding:40px 0;">
-          <h3 style="font-size:28px;font-weight:900;text-transform:uppercase;letter-spacing:-.02em;margin-bottom:16px;">We got it.</h3>
-          <p style="color:var(--silver);font-size:16px;line-height:1.65;">We'll be in touch within two business days.</p>
-        </div>
-      </div>
-      <div class="contact-info">
-        <h3>Direct<br/>lines.</h3>
-        <div class="ci-item">
-          <span class="ci-key">Email</span>
-          <div class="ci-val"><a href="mailto:Create@rbl-entertainment.com">Create@rbl-entertainment.com</a></div>
-        </div>
-        <div class="ci-item">
-          <span class="ci-key">Intro call</span>
-          <div class="ci-val"><a href="contact.html">Book via this form</a></div>
-        </div>
-        <div class="ci-item">
-          <span class="ci-key">LinkedIn</span>
-          <div class="ci-val"><a href="https://www.linkedin.com/company/rbl-entertainment" target="_blank" rel="noopener">RBL Entertainment</a></div>
-        </div>
-      </div>
+    <div class="ci-item">
+      <span class="ci-key">Email</span>
+      <div class="ci-val"><a href="mailto:Create@rbl-entertainment.com">Create@rbl-entertainment.com</a></div>
+    </div>
+    <div class="ci-item">
+      <span class="ci-key">LinkedIn</span>
+      <div class="ci-val"><a href="https://www.linkedin.com/company/rbl-entertainment" target="_blank" rel="noopener">RBL Entertainment</a></div>
     </div>
   </div>
 </section>
@@ -159,12 +111,5 @@
   </div>
 </footer>
 
-<script>
-  function handleSubmit(e) {
-    e.preventDefault();
-    document.getElementById('contact-form').style.display = 'none';
-    document.getElementById('form-success').style.display = 'block';
-  }
-</script>
 </body>
 </html>
